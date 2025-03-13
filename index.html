@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator By Ali</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">Quote Generator</div>
+        
+        <div class="category-filter">
+            <select id="category-select">
+                <option value="all">All Categories</option>
+                <option value="inspiration">Inspiration</option>
+                <option value="wisdom">Wisdom</option>
+                <option value="success">Success</option>
+                <option value="life">Life</option>
+                <option value="happiness">Happiness</option>
+            </select>
+        </div>
+        
+        <div class="quote-container">
+            <div class="loader" id="loader"></div>
+            <div class="quote-text" id="quote">Loading your quote...</div>
+            <div class="quote-author" id="author"></div>
+            <div class="quote-category" id="category"></div>
+        </div>
+        
+        <div class="buttons">
+            <button id="new-quote-btn">
+                <img src="add.png" alt="New Quote"> New Quote
+            </button>
+            <button class="tweet-btn" id="tweet-btn">
+                <img src="twitter.png" alt="Twitter"> Tweet
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

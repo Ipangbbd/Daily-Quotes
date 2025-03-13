@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    padding: 20px;
+}
+
+.container {
+    width: 550px;
+    max-width: 95%;
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.header {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.quote-container {
+    margin: 35px 0;
+    min-height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.quote-text {
+    font-size: 22px;
+    color: #555;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.quote-author {
+    font-size: 18px;
+    color: #888;
+    text-align: right;
+    font-weight: 600;
+}
+
+.quote-category {
+    font-size: 14px;
+    color: #aaa;
+    text-align: right;
+    margin-top: 5px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+button {
+    background: #6e8efb;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+button:hover {
+    background: #5a7df7;
+}
+
+button img {
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+}
+
+.tweet-btn {
+    background: #1DA1F2;
+}
+
+.tweet-btn:hover {
+    background: #0d8ed9;
+}
+
+.loader {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #6e8efb;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+    display: none;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.category-filter {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.category-filter select {
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
